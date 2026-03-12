@@ -3,11 +3,11 @@ Gestione Rubrica
 Programma da console per salvare contatti.
 
 Funzioni possibili:
-- Aggiungere contatto (nome + numero)
-- Visualizzare contatti
-- Cercare contatto
+x Aggiungere contatto (nome + numero)
+x Visualizzare contatti
+x Cercare contatto
 - Eliminare contatto
-- Menu con scelta numerica
+x Menu con scelta numerica
 
 Esempio menu:
 
