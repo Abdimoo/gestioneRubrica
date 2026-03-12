@@ -1,0 +1,14 @@
+C:\Users\abdel\Documents\Csharp\CsharpProjects\gestioneRubrica\bin\Debug\net10.0\gestioneRubrica.exe
+C:\Users\abdel\Documents\Csharp\CsharpProjects\gestioneRubrica\bin\Debug\net10.0\gestioneRubrica.deps.json
+C:\Users\abdel\Documents\Csharp\CsharpProjects\gestioneRubrica\bin\Debug\net10.0\gestioneRubrica.runtimeconfig.json
+C:\Users\abdel\Documents\Csharp\CsharpProjects\gestioneRubrica\bin\Debug\net10.0\gestioneRubrica.dll
+C:\Users\abdel\Documents\Csharp\CsharpProjects\gestioneRubrica\bin\Debug\net10.0\gestioneRubrica.pdb
+C:\Users\abdel\Documents\Csharp\CsharpProjects\gestioneRubrica\obj\Debug\net10.0\gestioneRubrica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\abdel\Documents\Csharp\CsharpProjects\gestioneRubrica\obj\Debug\net10.0\gestioneRubrica.AssemblyInfoInputs.cache
+C:\Users\abdel\Documents\Csharp\CsharpProjects\gestioneRubrica\obj\Debug\net10.0\gestioneRubrica.AssemblyInfo.cs
+C:\Users\abdel\Documents\Csharp\CsharpProjects\gestioneRubrica\obj\Debug\net10.0\gestioneRubrica.csproj.CoreCompileInputs.cache
+C:\Users\abdel\Documents\Csharp\CsharpProjects\gestioneRubrica\obj\Debug\net10.0\gestioneRubrica.dll
+C:\Users\abdel\Documents\Csharp\CsharpProjects\gestioneRubrica\obj\Debug\net10.0\refint\gestioneRubrica.dll
+C:\Users\abdel\Documents\Csharp\CsharpProjects\gestioneRubrica\obj\Debug\net10.0\gestioneRubrica.pdb
+C:\Users\abdel\Documents\Csharp\CsharpProjects\gestioneRubrica\obj\Debug\net10.0\gestioneRubrica.genruntimeconfig.cache
+C:\Users\abdel\Documents\Csharp\CsharpProjects\gestioneRubrica\obj\Debug\net10.0\ref\gestioneRubrica.dll
