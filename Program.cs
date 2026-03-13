@@ -45,7 +45,7 @@ class Contatto
         set { numero = value; }
     }
 
-    public void Assegna()
+    public Contatto()
     {
         do
         {
@@ -76,7 +76,21 @@ class Program
 
     static string Ricerca(List<Contatto> rubrica, string nome)
     {
-        return rubrica.FindIndex(x => x.Nome.Equals(nome)) + 1 + " - " + rubrica.Find(x => x.Nome.Equals(nome)).ToString();
+        return (rubrica.Find(x => x.Nome.Equals(nome))!=null) ? $"Il numero associato a {nome} cercato è: {rubrica.Find(x => x.Nome.Equals(nome)).Numero}": "Contatto non trovato";
+    }
+
+    static string Eliminazione(List<Contatto> rubrica, string nome,int scelta)
+    {
+        if (scelta==4){
+            if(rubrica.Find(x => x.Nome.Equals(nome)) != null)
+            {
+                rubrica.Remove(rubrica.Find(x => x.Nome.Equals(nome)));
+                return $"Il contatto {nome} è stato rimosso dalla rubrica.";
+            }
+            return "Contatto non esistente.";
+        }
+        rubrica.RemoveRange(0,rubrica.Count);
+        return "Tutti i contatti sono stati rimossi";
     }
     static void Main()
     {
@@ -96,12 +110,11 @@ class Program
             {
                 scelta = -1;
             }
-            Console.Clear();
+            //Console.Clear();
             switch (scelta)
             {
                 case 1:
                     Contatto contatto = new();
-                    contatto.Assegna();
                     AggiungiContatto(rubrica, contatto);
                     break;
                 case 2:
@@ -121,9 +134,34 @@ class Program
                     break;
                 case 3:
                     Console.Write("Inserire il nome da cercare: ");
-                    Console.WriteLine("Il nome cercato si trova in posizione " + Ricerca(rubrica, Console.ReadLine() ?? ""));
+                    Console.WriteLine(Ricerca(rubrica, Console.ReadLine() ?? ""));
                     break;
-
+                case 4:
+                    Console.Write("Inserire il nome da eliminare: ");
+                    Console.WriteLine(Eliminazione(rubrica, Console.ReadLine() ?? "",scelta));
+                    break;
+                case 5:
+                    string rispostaEliminazione="";
+                    while(!rispostaEliminazione.Equals("y")||rispostaEliminazione.Equals("n")){
+                        Console.Write("Sicuro di voler eliminare la rubrica? Y/n ");
+                        rispostaEliminazione = Console.ReadLine() ?? "";
+                        rispostaEliminazione = rispostaEliminazione.ToLower();
+                        if (!rispostaEliminazione.Equals("y")||rispostaEliminazione.Equals("n"))
+                        {
+                            Console.WriteLine("Carattere non riconosciuto. riprovare.");
+                            continue;
+                        }
+                        if(rispostaEliminazione.Equals("y"))
+                        {
+                            Console.WriteLine("Cancellazione in corso");
+                            Console.WriteLine(Eliminazione(rubrica, "",scelta));
+                        }
+                        else
+                        {
+                            Console.WriteLine("Cancellazione annullata");
+                        }
+                    }
+                    break;
                 case <= 0:
                     Console.WriteLine("Uscita dal programma");
                     break;
@@ -132,7 +170,7 @@ class Program
                     break;
             }
             Console.ReadLine();
-            Console.Clear();
+            //Console.Clear();
         }
     }
 }

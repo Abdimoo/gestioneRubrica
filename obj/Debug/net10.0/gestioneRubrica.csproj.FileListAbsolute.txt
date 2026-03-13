@@ -12,3 +12,4 @@ C:\Users\abdel\Documents\Csharp\CsharpProjects\gestioneRubrica\obj\Debug\net10.0
 C:\Users\abdel\Documents\Csharp\CsharpProjects\gestioneRubrica\obj\Debug\net10.0\gestioneRubrica.pdb
 C:\Users\abdel\Documents\Csharp\CsharpProjects\gestioneRubrica\obj\Debug\net10.0\gestioneRubrica.genruntimeconfig.cache
 C:\Users\abdel\Documents\Csharp\CsharpProjects\gestioneRubrica\obj\Debug\net10.0\ref\gestioneRubrica.dll
+C:\Users\abdel\Documents\Csharp\CsharpProjects\gestioneRubrica\obj\Debug\net10.0\gestioneRubrica.sourcelink.json
